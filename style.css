@@ -10,11 +10,11 @@ body {
   color: #333;
 }
 
-/* Hero Section */
+/* Hero Section with Banner Background */
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/banner.jpg') center/cover no-repeat;
+  background: url('images/banner.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,12 +22,24 @@ body {
   color: white;
 }
 
+/* Dark overlay on top of banner */
 .hero .overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
+
+/* Text styling */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
 
 .hero-text {
   position: relative;
