@@ -10,40 +10,42 @@ body {
   color: #333;
 }
 
-/* Hero Section with Banner Background */
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url('images/banner.jpg') no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+/* Background video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes it cover like a banner */
+  z-index: -1;
 }
 
-/* Dark overlay on top of banner */
+/* Dark overlay to make text visible */
 .hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.4); /* adjust transparency */
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-text {
+  position: relative;
   z-index: 1;
-}
-
-/* Text styling */
-.hero-text {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-
-
-.hero-text {
-  position: relative;
-  z-index: 2;
 }
 
 .hero h1 {
