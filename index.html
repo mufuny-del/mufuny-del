@@ -4,76 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Innovixs Training & Development</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; }
-    header {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x600/?technology,cloud');
-      background-size: cover; background-position: center;
-      color: #fff; text-align: center; padding: 100px 20px;
-    }
-    header h1 { font-size: 3rem; font-weight: bold; }
-    header p { font-size: 1.2rem; }
-    section { padding: 60px 20px; }
-    .course-card { transition: transform .3s; }
-    .course-card:hover { transform: translateY(-5px); }
-    footer { background: #222; color: #bbb; padding: 20px; text-align: center; }
-    .highlight { color: #0d6efd; font-weight: 600; }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Hero Section -->
-<header>
-  <h1>Innovixs Training & Development</h1>
-  <p>Empowering Students & Professionals with Future-Ready IT Skills</p>
-  <a href="#courses" class="btn btn-primary btn-lg mt-3">Explore Courses</a>
-</header>
-
-<!-- About -->
-<section id="about" class="container">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h2>About Us</h2>
-      <p>At <span class="highlight">Innovixs Training & Development</span>, we provide world-class IT training programs designed for both students and professionals. Our mission is to prepare individuals for the fast-paced world of technology with hands-on, industry-relevant learning.</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Innovixs Training & Development</h1>
+      <p>Upskill with Cloud, DevOps, Databases & Web Technologies</p>
+      <a href="#courses" class="btn">Explore Courses</a>
     </div>
-    <div class="col-md-6 text-center">
-      <img src="https://source.unsplash.com/500x350/?coding,team" class="img-fluid rounded shadow" alt="About Us">
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- Courses -->
-<section id="courses" class="bg-light">
-  <div class="container text-center">
-    <h2 class="mb-5">Our Training Programs</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card course-card shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title">Cloud Computing</h5>
-            <p class="card-text">AWS, GCP, and Azure training with real-world projects.</p>
-          </div>
-        </div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      At <b>Innovixs</b>, we provide industry-ready training for students and professionals. 
+      Our goal is to equip learners with hands-on skills in Cloud, DevOps, Networking, Databases, 
+      and Full-Stack Development to meet real-world challenges.
+    </p>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="section light">
+    <h2>Our Courses</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/aws.png" alt="AWS">
+        <h3>AWS & Cloud</h3>
       </div>
-      <div class="col-md-4">
-        <div class="card course-card shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title">Databases</h5>
-            <p class="card-text">Master MongoDB, MySQL, PostgreSQL and database management.</p>
-          </div>
-        </div>
+      <div class="card">
+        <img src="images/python.png" alt="Python">
+        <h3>Python & DevOps</h3>
       </div>
-      <div class="col-md-4">
-        <div class="card course-card shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title">Development</h5>
-            <p class="card-text">Web & App Development with the latest frameworks and tools.</p>
-          </div>
-        </div>
+      <div class="card">
+        <img src="images/db.png" alt="Database">
+        <h3>Database & SQL</h3>
       </div>
-      <div class="col-md-4">
-        <div class="card course-card shadow-sm h-100">
-          <div class="card-body">
-            <h5 class="card-title">Networking</h5>
-            <p class="card-text">Hands-on networ
+      <div class="card">
+        <img src="images/web.png" alt="Web Development">
+        <h3>Web & App Development</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email us at: <a href="mailto:info@innovixs.com">info@innovixs.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Innovixs Training & Development. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
